@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayyan Restaurant - قائمة الطعام</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <h1 class="restaurant-name" data-ar=" الريان للبيتزا و الفطائر" data-en="Rayyan Restaurant" data-tr="Rayyan Restaurant">مطعم ريان</h1>
+                <p class="tagline" data-ar="افضل انواع البيتزا و الفطائر و الشاورما و العصائر الطازجه" data-en="Best Pizza, Turkish Pide, Shawarma & Fresh Juices" data-tr="En İyi Pizza, Pide, Döner & Taze Meyve Suları">افضل انواع البيتزا و الفطائر و الشاورما والعصائر الطازجه</p>
+                <div class="phone-numbers">
+                    <div class="phone-item">
+                        <span class="phone-icon">📞</span>
+                        <span class="phone-number">0502614204</span>
+                    </div>
+                    <div class="phone-item">
+                        <span class="phone-icon">📞</span>
+                        <span class="phone-number">0177273747</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="ar" title="العربية">🇸🇦</button>
+                <button class="lang-btn" data-lang="en" title="English">🇺🇸</button>
+                <button class="lang-btn" data-lang="tr" title="Türkçe">🇹🇷</button>
+            </div>
+        </header>
+
+        <!-- Menu Categories -->
+        <nav class="menu-nav">
+            <button class="category-btn" data-category="pizza">
+                <div class="category-image">
+                    <img src="images/pizza_baslik.webp" alt="Pizza Category" class="category-photo">
+                </div>
+                <div class="category-overlay">
+                    
+                    <span class="category-text" data-ar="البيتزا" data-en="Pizza" data-tr="Pizza">البيتزا</span>
+                </div>
+            </button>
+            <button class="category-btn" data-category="pide">
+                <div class="category-image">
+                    <img src="images/pide_baslik.jpg" alt="Pide Category" class="category-photo">
+                </div>
+                <div class="category-overlay">
+                    
+                    <span class="category-text" data-ar="الفطائر" data-en="Turkish Pide" data-tr="Pide">الفطائر</span>
+                </div>
+            </button>
+            <button class="category-btn" data-category="doner">
+                <div class="category-image">
+                    <img src="images/doner_baslik.jpg" alt="Doner Category" class="category-photo">
+                </div>
+                <div class="category-overlay">
+                    
+                    <span class="category-text" data-ar="شاورما" data-en="Shawarma" data-tr="Döner">شاورما</span>
+                </div>
+            </button>
+            <button class="category-btn" data-category="juices">
+                <div class="category-image">
+                    <img src="images/juice_baslik.jpg" alt="Juices Category" class="category-photo">
+                </div>
+                <div class="category-overlay">
+                    
+                    <span class="category-text" data-ar="العصائر" data-en="Juices" data-tr="Meyve Suları">العصائر</span>
+                </div>
+            </button>
+        </nav>
+
+        <!-- Menu Content -->
+        <main class="menu-content">
+            <button class="back-btn" data-ar="العودة إلى الفئات" data-en="Back to Categories" data-tr="Kategorilere Dön">العودة إلى الفئات</button>
+            
+            <!-- Pizza Section -->
+            <section id="pizza" class="menu-section">
+                <h2 class="section-title" data-ar="البيتزا" data-en="Pizza" data-tr="Pizza">البيتزا</h2>
+                <p style="text-align: center;"  class="item-description" data-ar="(صغير - وسط - كبير)" data-en="(Little - Medium - Big)" data-tr="(Küçük - Orta - Büyük)">البيتزا</p>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/special.jpg" alt="Al Rayyan Special Pizza" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="بيزا الرين مكس" data-en="Al Rayyan Special Pizza" data-tr="Al Rayyan Special Pizza">بيزا الرين مكس</h3>
+                            
+                            <div class="item-price">(19,55 - 26,45 - 34,50) SAR</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-image">
+                            
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="بيتزا لحم" data-en="Meat Pizza" data-tr="Etli Pizza">بيتزا لحم</h3>
+                            
+                            <div class="item-price">(19,55 - 26,45 - 34,50) SAR</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-image">
+                            
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="بيتزا دجاج" data-en="Chicken Pizza" data-tr="Tavuklu Pizza">بيتزا دجاج</h3>
+                            
+                            <div class="item-price">(19,55 - 26,45 - 34,50) SAR</div>
+                        </div>
+                    </div>
+
+                   <div class="menu-item">
+                        <div class="item-image">
+                            
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="بيتزا نقانق" data-en="Sausage Pizza" data-tr="Sosisli Pizza">بيتزا نقانق</h3>
+                            
+                            <div class="item-price">(19,55 - 26,45 - 34,50) SAR</div>
+                        </div>
+                    </div>
+
+                     <div class="menu-item">
+                        <div class="item-image">
+                            
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="بيتزا مورتدلا" data-en="Mortadella Pizza" data-tr="Salamlı Pizza">بيتزا مورتدلا</h3>
+                            
+                            <div class="item-price">(19,55 - 26,45 - 34,50) SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="بيتزا تونه" data-en="Tuna Pizza" data-tr="Ton Balıklı Pizza">بيتزا تونه</h3>
+                            
+                            <div class="item-price">(19,55 - 26,45 - 34,50) SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                        <img src="images/hudar.jpg" alt="Vegetable Pizza" class="item-photo">    
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="بيتزا خضار" data-en="Vegetable Pizza" data-tr="Sebzeli Pizza">بيتزا خضار</h3>
+                            
+                            <div class="item-price">(17,25 - 23 - 28,75) SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="عش البلبل" data-en="Honey Pizza" data-tr="Ballı Pizza">عش البلبل</h3>
+                            
+                            <div class="item-price">(17,25 - 23 - 28,75) SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/pizza_cbn.jpg" alt="Margherita Pizza" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="بيتزا مارغريتا" data-en="Pizza Margherita" data-tr="Pizza Margherita">بيتزا مارغريتا</h3>
+                            
+                            <div class="item-price">(17,25 - 23 - 28,75) SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/pizza_cbn.jpg" alt="Cheese Pizza" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="بيتزا جبن" data-en="Cheese Pizza" data-tr="Peynirli Pizza">بيتزا جبن</h3>
+                            
+                            <div class="item-price">(17,25 - 23 - 28,75) SAR</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- Pide Section -->
+            <section id="pide" class="menu-section">
+                <h2 class="section-title" data-ar="الفطائر" data-en="Turkish Pide" data-tr="Pide">الفطائر</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/Meat_Pide1.jpg" alt="Meat Pide" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="لحم" data-en="Meat Pide" data-tr="Etli Pide">لحم</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-image">
+                            
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="دجاج" data-en="Chicken Pide" data-tr="Tavuklu Pide">دجاج</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-image">
+                            
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="جبنة بيضاء" data-en="White Cheese Pide" data-tr="Beyaz Peynirli Pide">جبنة بيضاء</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="جبنة سائل" data-en="Cream Cheese Pide" data-tr="Krem Peynirli Pide">جبنة سائل</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="جبنة مبشور" data-en="Grated Cheese Pide" data-tr="Rendelenmiş Peynirli Pide">جبنة مبشور</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="جبنة مع البيض" data-en="Egg & Cheese Pide" data-tr="Yumurta & Peynir Pide">جبنة مع البيض</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="جبنة مع زعتر" data-en="Thyme & Cheese Pide" data-tr="Zater(Kekikli) & Peynir Pide">جبنة مع زعتر</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="لحم مع البيض" data-en="Egg & Meat Pide" data-tr="Yumurta & Et Pide">لحم مع البيض</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="دجاج مع البيض" data-en="Egg & Chicken Pide" data-tr="Yumurta & Tavuk Pide">دجاج مع البيض</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="سبانخ مع البيض" data-en="Egg & Spinach Pide" data-tr="Yumurta & Ispanak Pide">سبانخ مع البيض</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="محمرة" data-en="Muhammara Pide" data-tr="Muhammara Pide">محمرة</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/zater.jpg" alt="Zater Pide" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="زعتر" data-en="Thyme Pide" data-tr="Zater(Kekik) Pide">زعتر</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="لبنه" data-en="Labne Cheese Pide" data-tr="Labne Pide">لبنه</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/" alt="Labne Zater Pide" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="لبنه مع زعتر" data-en="Labne Zater Pide" data-tr="Labne Zater Pide">لبنه مع زعتر</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/" alt="Labne & Honey Pide" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="لبنه مع عسل" data-en="Labne Honey Pide" data-tr="Labne & Bal Pide">لبنه مع عسل</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/" alt="Labne & White Cheese Pide" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="لبنه مع جبنه" data-en="Labne White Cheese Pide" data-tr="Labne & Beyaz Peynir Pide">لبنه مع جبنه</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/" alt="Labne & Olive Pide" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="لبنه مع زيتون" data-en="Labne Olive Pide" data-tr="Labne & Zeytin Pide">لبنه مع زيتون</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/" alt="Labne & Nutella Pide" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="فطيرة نوتيلا" data-en="Labne Nutella Pide" data-tr="Labne & Nutella Pide">فطيرة نوتيلا</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/" alt="Potatoes Pide" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="بطاطس" data-en="Potatoes Pide" data-tr="Patatesli Pide">بطاطس</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/" alt="Spinach Pide" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="سبانخ" data-en="Spinach Pide" data-tr="Ispanaklı Pide">سبانخ</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/" alt="Tuna Pide" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="تونه" data-en="Tuna Pide" data-tr="Ton Balıklı Pide">تونه</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/" alt="Egg Pide" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="بيض" data-en="Egg Pide" data-tr="Yumurtalı Pide">بيض</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/" alt="Egg & Vegetable Pide" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="بيض مع الخضار" data-en="Egg & Vegetable Pide" data-tr="Yumurtalı Sebzeli Pide">بيض مع الخضار</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/" alt="Labne & Falafel Pide" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="فتيرة فلافل مع لبنه" data-en="Labne & Falafel Pide" data-tr="Labne & Falafel Pide">فتيرة فلافل مع لبنه</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/" alt="Chicken & Cheese Pide" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="دجاج بالجبن" data-en="Chicken & Cheese Pide" data-tr="Tavuk & Kaşar Pide">دجاج بالجبن</h3>
+                            
+                            <div class="item-price">9,20 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/" alt="Meat & Cheese Pide" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="لحم بالجبن" data-en="Meat & Cheese Pide" data-tr="Et & Kaşar Pide">لحم بالجبن</h3>
+                            
+                            <div class="item-price">9,20 SAR</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Doner Section -->
+            <section id="doner" class="menu-section">
+                <h2 class="section-title" data-ar="شاورما" data-en="Shawarma" data-tr="Döner">شاورما</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/sandviç.jpg" alt="Shawarma" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="شاورما سندويتش" data-en="Sandwich Shawarma" data-tr="Sandviç Döner">شاورما سندويتش</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/meat-doner.jpg" alt="Sandwich Shawarma & Cheese" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="شاورما سندويتش مع الجبن" data-en="Sandwich Shawarma & Cheese" data-tr="Peynirli Sandviç Döner">شاورما سندويتش مع الجبن</h3>
+                            
+                            <div class="item-price">9,20 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/arabi.jpg" alt="Shawarma Arabi in Oven" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="شاورما عربي مطبق بالفرن" data-en="Shawarma Arabi in Oven" data-tr="Fırında Arabi Döner">شاورما عربي مطبق بالفرن</h3>
+                            
+                            <div class="item-price">17,25 SAR</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/meat-doner.jpg" alt="Shawarma Iskender" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="شاورما اسكندر" data-en="Shawarma Iskender" data-tr="İskender Döner">شاورما اسكندر</h3>
+                            
+                            <div class="item-price">25,30 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/tabak.jpg" alt="Shawarma on Plate" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="شاورما صحن" data-en="Shawarma on Plate" data-tr="Tabakta Döner">شاورما صحن</h3>
+                            
+                            <div class="item-price">23 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/saruh.jpg" alt="Tall Shawarma Sandwich" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="شاورما صاروخ" data-en="Tall Shawarma Sandwich" data-tr="Zurna Döner">شاورما صاروخ</h3>
+                            
+                            <div class="item-price">11,50 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/saruh.jpg" alt="Tall Shawarma Sandwich & Cheese" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="شاورما صاروخ مع الجبن" data-en="Tall Shawarma Sandwich & Cheese" data-tr="Peynirli Zurna Döner">شاورما صاروخ مع الجبن</h3>
+                            
+                            <div class="item-price">12,65 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/saruh.jpg" alt="Tall Shawarma Sandwich & Double Cheese" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="شاورما صاروخ مع (۲) الجبن" data-en="Tall Shawarma Sandwich & Double Cheese" data-tr="Çift Peynirli Zurna Döner">شاورما صاروخ مع (۲) الجبن</h3>
+                            
+                            <div class="item-price">13,80 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/arabi-sac.jpg" alt="Sheet Arabi Shawarma" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="شاورما عربي صاج" data-en="Sheet Arabi Shawarma" data-tr="Sac'da Arabi Döner">شاورما عربي صاج</h3>
+                            
+                            <div class="item-price">17,25 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/meat-doner.jpg" alt="Sheet Arabi Shawarma Double" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="شاورما عربي صاج دبل" data-en="Sheet Arabi Shawarma Double" data-tr="Sac'da Double Arabi Döner">شاورما عربي صاج دبل</h3>
+                            
+                            <div class="item-price">28,75 SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/sdf.jpg" alt="Potatoes Chips" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="صحن بطاطس" data-en="Potatoes Chips" data-tr="Patates Cipsi">صحن بطاطس</h3>
+                            
+                            <div class="item-price">8,05 SAR</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Juices Section -->
+            <section id="juices" class="menu-section">
+                <h2 class="section-title" data-ar="العصائر الطازجة" data-en="Fresh Juices" data-tr="Taze Meyve Suları">العصائر الطازجة</h2>
+                <p style="text-align: center;"  class="item-description" data-ar="(صغير - كبير - جالون)" data-en="(Little - Big - Gallon)" data-tr="(Küçük - Büyük - Galon)">برتقال</p>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/orange-juice.webp" alt="Orange Juice" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="برتقال" data-en="Orange Juice" data-tr="Portakal Suyu">برتقال</h3>
+                            
+                            <div class="item-price">(5,75 - 9,20 - 25) SAR</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/kokteyl1.jpg" alt="Orange Juice" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="كوكتيل" data-en="Coctail" data-tr="Kokteyl">كوكتيل</h3>
+                            
+                            <div class="item-price">(5,75 - 9,20 - 25) SAR</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/guava.jpg" alt="Guava" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="جوافه" data-en="Guava" data-tr="Guava">جوافه</h3>
+                            
+                            <div class="item-price">(5,75 - 9,20 - 25) SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/mango.jpg" alt="Mango" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="مانجو " data-en="Mango" data-tr="Mango">مانجو </h3>
+                            
+                            <div class="item-price">(5,75 - 9,20 - 25) SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/cilek.jpg" alt="Strawberry" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="فراوله " data-en="Strawberry" data-tr="Çilek">فراوله </h3>
+                            
+                            <div class="item-price">(5,75 - 9,20 - 25) SAR</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="images/rainbow.jpg" alt="Tabaket" class="item-photo">
+                            
+                        </div>
+                        <div class="item-info">
+                            <h3 class="item-name" data-ar="طبقات " data-en="Rainbow" data-tr="Gökkuşağı">طبقات </h3>
+                            
+                            <div class="item-price">(5,75 - 9,20 - 25) SAR</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text" data-ar="شكراً لزيارتكم - نتمنى لكم وجبة شهية" data-en="Thank you for visiting - Enjoy your meal" data-tr="Ziyaretiniz için teşekkürler - Afiyet olsun">شكراً لزيارتكم - نتمنى لكم وجبة شهية</p>
+        </footer>
+        <div style="text-align:center; font-size:0.95em; color:#888; margin-top:8px; margin-bottom:12px;">
+            This site was developed by <a href="https://abdullahkablan.com" target="_blank" style="color:#888; text-decoration:underline;">abdullahkablan.com</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
